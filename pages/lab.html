@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,8 +20,8 @@
             Your browser does not support the audio element.
         </audio>
     </div>
+    <h6>span, video, source</h6>
     <span>
-        <h6>video, source</h6>
         <video controls>
             <source src="/assets/video/fetty_wap.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -89,17 +90,18 @@
     <h6>Dialog</h6>
     <dialog open>Hi this is an open dialog</dialog>
     <h6>Search</h6>
-    <search>
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <label for="query">Search Google:</label>
-            <input type="text" id="query" name="q" placeholder="Type here...">
-            <button type="submit">Search</button>
-        </form>
-    </search>
+    <div>
+        <search>
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <label for="query">Search Google:</label>
+                <input type="text" id="query" name="q" placeholder="Type here...">
+                <button type="submit">Search</button>
+            </form>
+        </search>
+    </div>
     <h6>Dfn</h6>
     <p><dfn>Discombobulate</dfn> means to disconcert or confuse (someone)</p>
-    <h6></h6>
-    <h6><kbd></kbd></h6>
+    <h6>kbd</h6>
     <p>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to inspect the page</p>
     <h6>noscript</h6>
     <noscript>Your browser does not support JavaScript!</noscript>
