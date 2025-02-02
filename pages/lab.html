@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Dump</title>
+    
+</head>
+<body>
+    <h1>This page is for the rest of the HTML tags</h1>
+    <h6>iframe</h6>
+    <iframe src="https://ucsd.edu" name="Google iFrame"></iframe>
+    <h6>audio</h6>
+    <div>
+        <h6>div</h6>
+        <audio controls>
+            <source src="\assets\audio\fetty_wap.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <span>
+        <h6>video, source</h6>
+        <video controls>
+            <source src="\assets\video\fetty_wap.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </span>
+    <h6>canvas, script</h6>
+    <canvas id="my_canvas">
+        <script>
+            let canvas = document.getElementById("my_canvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#ffe0ff";
+            ctx.fillRect(0, 0, 80, 80);
+        </script>
+    </canvas>
+    <h6>svg, template</h6>
+    <template id="circle_image">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="pink" />
+        </svg>
+    </template>
+    <h6>Form, Label, Optgroup, Option, Select, Fieldset, Legend, Label, Input, Datalist, Textarea, Button, Del, Ins</h6>
+    <form action="">
+        <label for="money">Donate some cheddar</label>
+        <select name="money" id="money">
+            <optgroup label="Chump">
+                <option value="1">$1</option>
+                <option value="5">$5</option>
+            </optgroup>
+            <optgroup label="Boss">
+                <option value="20">$20</option>
+                <option value="100">$100</option>
+            </optgroup>
+        </select>
+    </form>
+    <form action="https://www.postb.in/1738458335213-1265935369301" method="post">        
+        <fieldset>
+            <legend>Contact Me!</legend>
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name" id="first_name" placeholder="First">
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name" id="last_name" placeholder="Last">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <label for="purpose">Purpose of Contact:</label>
+            <select name="purpose" id="purpose">
+                <option value="academic">Academic</option>
+                <option value="career">Career</option>
+                <option value="business">Business</option>
+                <option value="general">General Inquiry</option>
+            </select>
+            <label for="country">What country are you from?</label>
+            <input list="countries" id="country" name="country">
+            <datalist id="countries">
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+                <option value="mexico">Mexico</option>
+                <option value="russia">Russia</option>
+                <option value="south_korea">South Korea</option>
+            </datalist>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" placeholder="Let me know something!"></textarea>
+            <button type="submit">Submit</button>
+            <p>I will get back to you within <del>the hour </del><ins>2-3 days.</ins></p>
+        </fieldset>
+    </form>
+    <h6>Dialog</h6>
+    <dialog open>Hi this is an open dialog</dialog>
+    <h6>Search</h6>
+    <search>
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <label for="query">Search Google:</label>
+            <input type="text" id="query" name="q" placeholder="Type here...">
+            <button type="submit">Search</button>
+        </form>
+    </search>
+    <h6>Dfn</h6>
+    <p><dfn>Discombobulate</dfn> means to disconcert or confuse (someone)</p>
+    <h6></h6>
+    <h6><kbd></kbd></h6>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to inspect the page</p>
+    <h6>noscript</h6>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    
+    <script>
+        class HelloWorldElement extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+
+        // Define the custom element
+        customElements.define("hello-world", HelloWorldElement);
+    </script>
+    <h6>hello-world custom element</h6>
+    <hello-world></hello-world>
+</body>
+</html>
